@@ -28,7 +28,7 @@ endif()
 catkin_python_setup()
 
 catkin_package(
-  INCLUDE_DIRS include
+  INCLUDE_DIRS include ${EIGEN3_INCLUDE_DIRS}
   LIBRARIES laser_geometry
   DEPENDS Boost Eigen3
 )
